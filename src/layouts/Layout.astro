@@ -1,0 +1,23 @@
+---
+import Navbar from "@/components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Gerard Portfolio" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Gerard Costa</title>
+	</head>
+	<body class="font-sans bg-background text-foreground">
+		<Navbar />
+		<main class="w-[82%] m-auto">
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style is:global></style>
