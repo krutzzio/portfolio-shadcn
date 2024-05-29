@@ -5,30 +5,22 @@ import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
-    CarouselItem,
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import ProjectCard from "./ProjectCard.astro"
+import ProjectCard from "./ProjectCard"
 
-export function CarouselDemo({ children }) {
+export function ProjectsCarusel() {
     return (
         <Carousel opts={{
             loop: true,
-        }} className="w-full max-w-xs">
+        }} className="w-[80%] lg:w-[90%] m-auto">
             <CarouselContent>
-                {projects.map((project, index) => (
-                    <CarouselItem key={index}>
-                        <div className="p-1">
-                            <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    {children}
-                                    <ProjectCard project={project} />
-                                </CardContent>
-                            </Card>
-                        </div>
-                    </CarouselItem>
-                ))}
+                {
+                    projects.map((project, index) => (
+                        <ProjectCard key={index} project={project} />
+                    ))
+                }
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />

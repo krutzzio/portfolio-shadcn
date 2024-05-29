@@ -1,10 +1,27 @@
 [
     {
         "name": "Gamba",
-        "desc": "Desarrollo de una página web donde los restaurantes publicaban sus recetas para darse a conocer."
+        "desc": "Aplicacion web donde los restaurantes pueden publicar sus recetas para darse a conocer por los usuarios, que las pueden guardar i preparar.",
+        "techs": [
+            "HTML",
+            "CSS",
+            "Tailwind",
+            "React",
+            "NodeJs",
+            "SQL"
+        ],
+        "img": "gamba.png"
     },
     {
         "name": "Regira",
-        "desc": "Lorem Regirem"
+        "desc": "Regira es una app de gestión de proyectos inspirada en Trello. Permite organizar tareas con tableros, listas y tarjetas, facilitando la colaboración en tiempo real y la asignación de tareas. Ideal para equipos, freelancers y estudiantes.",
+        "techs": [
+            "HTML",
+            "CSS",
+            "Tailwind",
+            "React",
+            "NodeJs"
+        ],
+        "img": "regira.png"
     }
 ]

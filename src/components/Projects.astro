@@ -1,18 +1,19 @@
 ---
-import ProjectCard from "./ProjectCard.astro";
+import ProjectCard from "./ProjectCard";
 import projects from "../lib/projects.json";
-import { CarouselDemo } from "./Carousel";
-
-console.log(projects);
+import { ProjectsCarusel } from "./Carousel";
 ---
 
-<CarouselDemo client:load />
-<!-- 
-
-<section class="my-32">
-    <h1 class="text-[128px] font-medium">Projects</h1>
+<section
+    class="my-32 text-[2rem]
+sm:text-[3.5rem] sm:leading-[3.5rem]
+md:text-[4.2rem] md:leading-[4.5rem]
+lg:text-[5.5rem] lg:leading-[5.5rem]
+xl:text-[7.5em] xl:leading-[7.5rem]
+2xl:text-[9em] 2xl:leading-[9rem]"
+>
+    <h1 class="font-medium xl:text-[8rem] mb-16">Projects</h1>
     <main class="flex flex-col gap-20">
-        {projects.map((project) => <ProjectCard project={project} />)}
+        <ProjectsCarusel client:load />
     </main>
 </section>
- -->
