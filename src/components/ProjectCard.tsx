@@ -8,7 +8,7 @@ import { Button } from './ui/button';
 
 
 export default function ProjectCard({ project }: Project) {
-    const { name, desc, techs, img } = project;
+    const { name, desc, techs, img, url } = project;
 
     return (
 
@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: Project) {
             <Card className='border-0 shadow-transparent border-foreground lg:border-2 lg:min-h-[18rem]'>
                 <CardContent className="p-0 lg:p-6">
                     <section className="flex flex-col justify-between relative">
-                        <h1 className="font-medium lg:text-[4rem] leading-[1em] mb-8 lg:mb-4">{name}</h1>
+                        <h1 className="font-medium lg:text-[4rem] leading-[1em] mb-8 lg:mb-4 text-principal">{name}</h1>
                         <article className="h-full flex flex-col-reverse gap-4 justify-between
                             lg:flex-row">
                             <div className='flex flex-col lg:justify-center gap-4 lg:w-[60%]'>
@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: Project) {
                                     }
                                 </div>
                                 <Button className='bg-white flex font-bold justify-evenly text-black w-fit rounded-xl m-auto border-2 lg:hidden border-black dark:border-0'>
-                                    <img src="/icons/github-mark.svg" className='w-[20%]' alt="" />
+                                    <img src="/icons/github-mark.svg" className='w-[20%]' alt="github icon" />
                                     Github
                                 </Button>
                             </div>
@@ -41,15 +41,17 @@ export default function ProjectCard({ project }: Project) {
                                 alt="Gamba Landing"
                             />
                         </article>
-                        <div className='w-fit hidden lg:flex m-auto justify-center mt-6 flex-wrap gap-2'>
+                        <div className='w-fit hidden lg:flex m-auto justify-center  mt-6 flex-wrap gap-2 '>
                             {
-                                techs.map((tech, index) => <Badge className='border-foreground' key={index}>{tech}</Badge>)
+                                techs.map((tech, index) => <Badge className='border-foreground ' key={index}>{tech}</Badge>)
                             }
                         </div>
-                        <Button className='bg-white hidden font-bold justify-evenly text-black w-fit rounded-xl m-auto border-2 lg:flex mt-4 border-black dark:border-0'>
-                            <img src="/icons/github-mark.svg" className='w-[20%]' alt="" />
-                            Github
-                        </Button>
+                        <a href={url} target='_blank' className='w-fit m-auto'>
+                            <Button className='bg-white hidden font-bold  justify-evenly text-black w-fit rounded-xl m-auto border-2 lg:flex mt-4 border-black dark:border-0'>
+                                <img src="/icons/github-mark.svg" className='w-[20%]' alt="gitub icon" />
+                                Github
+                            </Button>
+                        </a>
                     </section>
                 </CardContent>
             </Card>

@@ -7,10 +7,16 @@
             "CSS",
             "Tailwind",
             "React",
+            "NextUI",
+            "Figma",
             "NodeJs",
-            "SQL"
+            "Express",
+            "Sequelize",
+            "MySQL",
+            "Postman"
         ],
-        "img": "gamba.png"
+        "img": "gamba.png",
+        "url": "https://github.com/krutzzio/Project-shrimp"
     },
     {
         "name": "Regira",
@@ -20,8 +26,11 @@
             "CSS",
             "Tailwind",
             "React",
-            "NodeJs"
+            "NodeJs",
+            "Express",
+            "Sequelize"
         ],
-        "img": "regira.png"
+        "img": "regira.png",
+        "url": "https://github.com/krutzzio/Regira"
     }
 ]

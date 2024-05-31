@@ -1,7 +1,5 @@
-import * as React from "react"
 import projects from "../lib/projects.json";
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,

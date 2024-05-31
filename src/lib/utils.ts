@@ -6,7 +6,8 @@ export interface Project {
     name: string,
     desc: string,
     techs: string[],
-    img: string
+    img: string,
+    url: string
   }
 }
 

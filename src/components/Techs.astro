@@ -1,12 +1,20 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
 
-<section class="">
-    <h1 class="text-[1em] font-medium">Skills and tools</h1>
-    <main>
-        <article>
-            <h2>Typescript</h2>
+<section
+    class="text-[2rem]
+    sm:text-[3.5em]
+    md:text-[4.2em]
+    lg:text-[5.5em]
+    xl:text-[7.5em]
+    2xl:text-[9em]"
+>
+    <h1 class="font-medium xl:text-[100px] mb-16">Skills and tools</h1>
+    <main class="w-[80%] lg:w-[90%] m-auto">
+        <article class="flex flex-col items-center">
+            <Icon name="javascript" class="text-principal w" />
+            <h2 class="text-[0.15em]">Typescript</h2>
         </article>
     </main>
 </section>
