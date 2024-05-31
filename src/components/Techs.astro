@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import techs from "@/lib/techs.json";
 ---
 
 <section
@@ -8,13 +9,20 @@ import { Icon } from "astro-icon/components";
     md:text-[4.2em]
     lg:text-[5.5em]
     xl:text-[7.5em]
-    2xl:text-[9em]"
+    2xl:text-[9em]
+    lg:h-screen"
 >
     <h1 class="font-medium xl:text-[100px] mb-16">Skills and tools</h1>
-    <main class="w-[80%] lg:w-[90%] m-auto">
-        <article class="flex flex-col items-center">
-            <Icon name="javascript" class="text-principal w" />
-            <h2 class="text-[0.15em]">Typescript</h2>
-        </article>
+    <main
+        class="w-[80%] lg:w-[90%] m-auto grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-9"
+    >
+        {
+            techs.map((tech) => (
+                <article class="flex flex-col w-fit m-auto items-center">
+                    <Icon name={tech} class="text-principal text-[6rem]" />
+                    <h2 class="mt-4 text-[1.35rem]">{tech}</h2>
+                </article>
+            ))
+        }
     </main>
 </section>

@@ -20,7 +20,7 @@
     },
     {
         "name": "Regira",
-        "desc": "Regira es una app de gestión de proyectos inspirada en Trello. Permite organizar tareas con tableros, listas y tarjetas, facilitando la colaboración en tiempo real y la asignación de tareas. Ideal para equipos, freelancers y estudiantes.",
+        "desc": "Aplicacion web para organizar trabajos en equipo. Permite crear proyectos y organizar las tareas dependiendo de su prioridad, tipo y estado.",
         "techs": [
             "HTML",
             "CSS",

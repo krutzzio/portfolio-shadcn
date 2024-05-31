@@ -2,9 +2,9 @@ import type { Project } from '@/lib/utils';
 import { Card, CardContent } from "@/components/ui/card"
 import {
     CarouselItem,
-} from './ui/carousel';
+} from '../ui/carousel';
 import { Badge } from "@/components/ui/badge"
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 
 
 export default function ProjectCard({ project }: Project) {
@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: Project) {
                         <article className="h-full flex flex-col-reverse gap-4 justify-between
                             lg:flex-row">
                             <div className='flex flex-col lg:justify-center gap-4 lg:w-[60%]'>
-                                <p className="text-[0.65em] leading-[1em]  
+                                <p className="text-[0.65em] leading-[1em] lg:w-[75%] lg:m-auto
                                     sm:text-[0.35em]
                                     md:text-[0.3em] 
                                     lg:text-[0.25em] 

@@ -6,9 +6,9 @@
     class="flex flex-col justify-center lg:h-[100dvh] lg:mt-0 mt-32 text-[2rem]
     sm:text-[3.5rem] sm:leading-[3.5rem]
     md:text-[4.2rem] md:leading-[4.5rem]
-    lg:text-[5.5rem] lg:leading-[5.5rem]
-    xl:text-[7.5em] xl:leading-[7.5rem]
-    2xl:text-[9em] 2xl:leading-[9rem]"
+    lg:text-[6.5rem] lg:leading-[5.5rem]
+    xl:text-[8em] xl:leading-[7.5rem]
+    2xl:text-[10em] 2xl:leading-[9rem]"
 >
     <h1 class="">Hi! My name is</h1>
     <h1 class="text-principal text-[1.5em] leading-[1em] font-medium">
@@ -18,8 +18,36 @@
         I'm a <span class="font-medium">Full Stack developer</span>
     </h1>
     <h1 class="text-[0.95em]">
-        and <span class="font-medium text-principal">
-            (list of adjectives)
-        </span>
+        and <span id="cambio-texto" class="font-medium text-principal"> </span>
     </h1>
 </header>
+
+<style>
+    #cambio-texto {
+        display: inline-block;
+        transition: opacity 0.2s ease-in-out;
+    }
+</style>
+
+<script>
+    const textos = ["creativo 🚀", "entusiasta", "proactivo", "dedicado"];
+    let indice = 0;
+
+    function cambiarTexto() {
+        const elemento = document.getElementById("cambio-texto");
+        if (!elemento) return;
+        elemento.style.opacity = "0"; // Oculta el texto
+
+        setTimeout(() => {
+            elemento.textContent = textos[indice];
+            elemento.style.opacity = "1"; // Muestra el nuevo texto
+            indice = (indice + 1) % textos.length;
+        }, 200); // Tiempo suficiente para que la opacidad llegue a 0
+    }
+
+    // Cambia el texto cada 3 segundos
+    setInterval(cambiarTexto, 3000);
+
+    // Inicia el ciclo inmediatamente
+    cambiarTexto();
+</script>
