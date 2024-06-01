@@ -1,11 +1,12 @@
 [
     {
         "name": "Gamba",
-        "desc": "Aplicacion web donde los restaurantes pueden publicar sus recetas para darse a conocer por los usuarios, que las pueden guardar i preparar.",
+        "desc": "A web application where restaurants can publish their recipes to have more visibility on social media, and users can save and prepare the original recipes from the restaurant.",
         "techs": [
             "HTML",
             "CSS",
             "Tailwind",
+            "Javascript",
             "React",
             "NextUI",
             "Figma",
@@ -20,17 +21,48 @@
     },
     {
         "name": "Regira",
-        "desc": "Aplicacion web para organizar trabajos en equipo. Permite crear proyectos y organizar las tareas dependiendo de su prioridad, tipo y estado.",
+        "desc": "A web application for organizing team work. It allows creating projects and organizing tasks based on their priority, type, and status.",
         "techs": [
             "HTML",
             "CSS",
             "Tailwind",
+            "Typescript",
             "React",
             "NodeJs",
             "Express",
-            "Sequelize"
+            "Sequelize",
+            "Postman"
         ],
         "img": "regira.png",
         "url": "https://github.com/krutzzio/Regira"
+    },
+    {
+        "name": "Conektin",
+        "desc": "Web aplication that groups people into families, where besides meeting new people, users can create events to connect with new friendships.",
+        "techs": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "Material Icons",
+            "NodeJs",
+            "Express",
+            "Postman"
+        ],
+        "img": "conektin.png",
+        "url": "https://github.com/krutzzio/Conektin"
+    },
+    {
+        "name": "Multigames",
+        "desc": "A website to play different quick games to pass the time. You can choose between drawing a sprite or playing games like Memory with cats or the mythical Tic Tac Toe.",
+        "techs": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "Cat API"
+        ],
+        "img": "multigames.png",
+        "url": "https://github.com/krutzzio/multi-games"
     }
 ]

@@ -11,6 +11,8 @@ export interface Project {
   }
 }
 
+export type Tech = string
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }

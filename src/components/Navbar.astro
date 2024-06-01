@@ -1,11 +1,38 @@
 ---
+import { Icon } from "astro-icon/components";
 import ThemeIcon from "../components/ThemeIcon.astro";
+import { NavbarMenu } from "@/components/islands/NavbarMenu";
 ---
 
 <header
-    class="w-screen h-[7%] backdrop-blur-md flex items-center fixed border-b-foreground border-b-2 z-20"
+    class="w-screen h-[7%] backdrop-blur-md fixed border-b-foreground border-b-[3px] z-20"
 >
-    <nav class="w-[82%] lg:w-[90%] 2xl:w-[92%] m-auto">
+    <nav class="w-[80%] h-full m-auto flex justify-between items-center">
         <ThemeIcon />
+        <section>
+            <NavbarMenu client:load />
+        </section>
     </nav>
+    <div class="progess-bar"></div>
 </header>
+
+<style scoped>
+    .progess-bar {
+        position: absolute;
+        bottom: -3px;
+        height: 3px;
+        width: 100%;
+        background-color: var(--principal);
+        z-index: 40;
+
+        scale: 0 1;
+        transform-origin: left;
+        animation: progress-bar auto linear;
+        animation-timeline: scroll();
+    }
+    @keyframes progress-bar {
+        to {
+            scale: 1 1;
+        }
+    }
+</style>
