@@ -1,6 +1,7 @@
 ---
-import techs from "@/lib/techs.json";
-import Tech from "./Tech.astro";
+/* import techs from "@/lib/techs.json";
+import Tech from "./Tech.astro"; */
+import { Icon } from "astro-icon/components";
 ---
 
 <section
@@ -15,6 +16,78 @@ import Tech from "./Tech.astro";
     <main
         class="w-[80%] lg:w-[90%] m-auto grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-9"
     >
-        {techs.map((tech) => <Tech tech={tech} />)}
+        <!-- {techs.map((tech) => <Tech tech={tech} />)} -->
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="HTML" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">HTML</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="CSS" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">CSS</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Tailwind" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Tailwind</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Javascript" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Javascript</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="React" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">React</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Astro" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Astro</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Typescript" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Typescript</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Angular" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Angular</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="NextJs" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">NextJs</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Shadcn" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Shadcn</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="NextUI" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">NextUI</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Figma" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Figma</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="NodeJs" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">NodeJs</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Express" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Express</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Sequelize" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Sequelize</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="APIRest" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">APIRest</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Git" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Git</h2>
+        </article>
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name="Github" class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Github</h2>
+        </article>
     </main>
 </section>
