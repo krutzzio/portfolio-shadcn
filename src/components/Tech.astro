@@ -4,7 +4,16 @@ import { Icon } from "astro-icon/components";
 const { tech } = Astro.props;
 ---
 
-<article class="flex flex-col w-fit m-auto items-center">
-    <Icon name={tech} class="text-principal text-[6rem]" />
-    <h2 class="mt-4 text-[1.35rem]">{tech}</h2>
-</article>
+{
+    tech === "Java-script" ? (
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name={tech} class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">Javascript</h2>
+        </article>
+    ) : (
+        <article class="flex flex-col w-fit m-auto items-center">
+            <Icon name={tech} class="text-principal text-[6rem]" />
+            <h2 class="mt-4 text-[1.35rem]">{tech}</h2>
+        </article>
+    )
+}
