@@ -9,6 +9,6 @@ export default defineConfig({
   integrations: [icon(), react(), tailwind({
     applyBaseStyles: false
   })],
-  output: "static",
+  output: "server",
   adapter: netlify()
 });
