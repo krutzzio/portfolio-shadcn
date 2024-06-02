@@ -1,5 +1,83 @@
 ---
-
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
+import { Icon } from "astro-icon/components";
 ---
 
-<h1>Contact</h1>
+<section
+    id="contact"
+    class="text-[2rem] lg:mb-40
+    sm:text-[3.5em]
+    md:text-[4em]"
+>
+    <h1 class="font-medium xl:text-[100px] mb-16">Contact</h1>
+    <main class="flex gap-40 text-[22px] w-[80%] m-auto">
+        <section class="w-[60%]">
+            <h1 class="leading-[1em] mb-16">
+                You can send me a message or just contact me directly via <a
+                    href="mailto:gerard.costa.curr@gmail.com"
+                    class="text-principal font-medium"
+                >
+                    gerard.costa.curr@gmail.com
+                </a>
+            </h1>
+
+            <form
+                action="https://formspree.io/f/moqgodnr"
+                method="POST"
+                class="flex flex-col gap-8"
+            >
+                <Input
+                    className="text-xl ring-principal border-foreground border-2 rounded placeholder:text-foreground"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Email*"
+                />
+                <Input
+                    className="text-xl ring-principal border-foreground border-2 rounded placeholder:text-foreground"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Name*"
+                />
+                <Textarea
+                    className="text-xl ring-principal border-foreground border-2 rounded placeholder:text-foreground"
+                    required
+                    placeholder="Type your message here.*"
+                />
+                <Button
+                    className="text-xl w-fit m-auto border-foreground border-2 rounded"
+                    type="submit">Send</Button
+                >
+            </form>
+        </section>
+        <section class=" flex flex-col gap-16 items-center">
+            <div>
+                <h1 class="w-fit leading-[1em] mb-14">Find me in my socials</h1>
+                <article class="flex justify-center gap-6">
+                    <a href="https://github.com/krutzzio" target="_blank">
+                        <Icon name="Github" class="text-5xl text-principal" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/gerard-costa-gracia/"
+                        target="_blank"
+                    >
+                        <Icon
+                            name="socials/in"
+                            class="text-5xl text-principal"
+                        />
+                    </a>
+                </article>
+            </div>
+
+            <div>
+                <h1 class="w-fit leading-[1em] mb-14">...or get my resume.</h1>
+                <article class="flex justify-center">
+                    <Icon name="socials/cv" class="text-5xl text-principal" />
+                </article>
+            </div>
+        </section>
+    </main>
+</section>

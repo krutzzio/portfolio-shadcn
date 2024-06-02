@@ -31,10 +31,13 @@ export default function ProjectCard({ project }: Project) {
                                         techs.map((tech, index) => <Badge className='border-foreground' key={index}>{tech}</Badge>)
                                     }
                                 </div>
-                                <Button className='bg-white flex font-bold justify-evenly text-black w-fit rounded-xl m-auto border-2 lg:hidden border-black dark:border-0'>
-                                    <img src="/icons/github-mark.svg" className='w-[20%]' alt="github icon" />
-                                    Github
-                                </Button>
+                                <a href={url} target='_blank' className='w-fit m-auto lg:hidden'>
+                                    <Button className='bg-white flex items-center gap-4 font-bold text-black w-fit rounded-xl m-auto border-2 border-black dark:border-0'>
+                                        <img src="src\icons\Github.svg" className='w-6' alt="github icon" />
+                                        Github
+                                    </Button>
+                                </a>
+
                             </div>
                             <img className=" min-w-[15rem] max-w-[45rem] h-full w-[75%] lg:w-[80%] m-auto"
                                 src={`/images/${img}`}
@@ -47,8 +50,8 @@ export default function ProjectCard({ project }: Project) {
                             }
                         </div>
                         <a href={url} target='_blank' className='w-fit m-auto'>
-                            <Button className='bg-white hidden font-bold  justify-evenly text-black w-fit rounded-xl m-auto border-2 lg:flex mt-4 border-black dark:border-0'>
-                                <img src="/icons/github-mark.svg" className='w-[20%]' alt="gitub icon" />
+                            <Button className='bg-white hidden font-bold items-center gap-4 text-black w-fit rounded-xl m-auto border-2 lg:flex mt-4 border-black dark:border-0'>
+                                <img src="src\icons\Github.svg" className='w-6' alt="github icon" />
                                 Github
                             </Button>
                         </a>

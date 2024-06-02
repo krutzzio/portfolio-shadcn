@@ -7,12 +7,16 @@
   --foreground: hsl(34.29, 5.79%, 23.73%);
 
   --principal: hsl(16.62, 82.98%, 53.92%);
+
+  scroll-behavior: smooth;
 }
 
 html.dark {
   --background: hsl(40, 4.23%, 13.92%);
   --foreground: hsl(37.89, 15.7%, 76.27%);
 }
+
+
 
 @font-face {
   font-family: "PPNeue";
