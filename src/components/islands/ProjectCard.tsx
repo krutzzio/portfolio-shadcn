@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: Project) {
                                 </div>
                                 <a href={url} target='_blank' className='w-fit m-auto lg:hidden'>
                                     <Button className='bg-white flex items-center gap-4 font-bold text-black w-fit rounded-xl m-auto border-2 border-black dark:border-0'>
-                                        <img src="src\icons\Github.svg" className='w-6' alt="github icon" />
+                                        <img src="\icons\github-mark.svg" className='w-6' alt="github icon" />
                                         Github
                                     </Button>
                                 </a>
